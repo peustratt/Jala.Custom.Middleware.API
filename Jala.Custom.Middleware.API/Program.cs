@@ -23,6 +23,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseParamsMiddleware();
+app.UseQueryStringMiddleware();
 
 app.UseAuthorization();
 // app.Use(async (context, next) =>
